@@ -1,0 +1,380 @@
+/* main css RESET */
+* {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+/* CSS RESUMES */
+.main {
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* align-items: flex-end; */
+}
+section.socialWrapper {
+  display: flex;
+  gap: 30px;
+  /* margin-bottom: 30px; */
+}
+div.main {
+  height: 100vh;
+  > div.main1 {
+    width: 50%;
+    background: #fff6ee;
+  }
+}
+section.interface {
+  > div.logoWrapper {
+    margin-inline-start: 75px;
+    margin-block-start: 50px;
+  }
+  > p {
+    text-align: center;
+    font-family: Lato;
+    font-size: 4.1875rem;
+    line-height: 72px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-block-start: 50px;
+  }
+  > h3 {
+    text-align: center;
+    font-family: Lato;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+  }
+  .style_rightEllipse {
+    position: absolute;
+    top: 20px;
+    left: 610px;
+  }
+}
+footer {
+  
+
+  >div.social{
+    padding-block-start: 50px;
+    margin-inline-start: 300px;
+  }
+  div.copyright {
+    color:#615b55b4;
+    margin-block-start: 30px;
+    margin-inline-start: 230px;
+  }
+}
+div.style_leftEllipse{
+  position: absolute;
+  bottom:1px;
+}
+
+div.main2 {
+  width: 50%;
+  overflow: scroll;
+  padding: 30px;
+
+  > section.sign-up {
+    padding: 45px;
+  }
+}
+
+header {
+  font-size: 2rem;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+
+div.row1 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-block-start: 24px;
+
+  > div.firstname {
+    margin-bottom: 24px;
+
+    > div#firstname {
+      > input[type="text"] {
+        max-width: 250px;
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        padding: 12px 24px 12px 10px;
+      }
+      > input[type="text"]:hover {
+        border: 2px solid #4058df;
+      }
+    }
+  }
+  div.lastname {
+    margin-bottom: 24px;
+
+    > div#lastname {
+      /* padding: 12px 24px 12px 10px; */
+      > input[type="text"] {
+        max-width: 250px;
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        padding: 12px 24px 12px 10px;
+      }
+      > input[type="text"]:hover {
+        border: 2px solid #4058df;
+      }
+    }
+  }
+}
+div.row2 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+
+  > div.gender {
+    margin-bottom: 24px;
+
+    > div#gender {
+      > select {
+        /* width:250px; */
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        margin-inline-start: -52px;
+        padding: 12px 100px 12px 10px;
+      }
+    }
+  }
+
+  > div.DOB {
+    margin-bottom: 24px;
+    > div#DOB {
+      padding: 12px 64px 12px 10px;
+      border: 1px solid rgb(216, 219, 223);
+      border-radius: 4px;
+      > input[type="text"] {
+        max-width: 250px;
+        border: none;
+        padding: 12px 24px 12px 10px;
+      }
+      > input[type="text"]:hover {
+        border: 2px solid #4058df;
+      }
+    }
+  }
+}
+div.row3 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+
+  > div.email {
+    margin-bottom: 24px;
+
+    > div#email-box {
+      > input[type="text"] {
+        max-width: 250px;
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        padding: 12px 24px 12px 10px;
+      }
+      > input[type="text"]:hover {
+        border: 2px solid #4058df;
+      }
+    }
+  }
+  > div.education {
+    margin-bottom: 24px;
+
+    > div#education {
+      > select {
+        max-width: 250px;
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        padding: 12px 24px 12px 10px;
+      }
+    }
+  }
+}
+div.row4 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+
+  > div.country {
+    margin-bottom: 24px;
+
+    > div#country {
+      > select {
+        max-width: 250px;
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        padding: 12px 24px 12px 10px;
+      }
+    }
+  }
+  > div.state {
+    margin-bottom: 24px;
+
+    > div#state {
+      > input[type="text"] {
+        max-width: 250px;
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        padding: 12px 24px 12px 10px;
+      }
+      > input[type="text"]:hover {
+        border: 2px solid #4058df;
+      }
+    }
+  }
+}
+
+div.row5 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  > div.employment {
+    margin-bottom: 24px;
+    margin-right: 20px;
+    > div#employment {
+      > select {
+        max-width: 250px;
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        padding: 12px 124px 12px 10px;
+      }
+    }
+  }
+  > div.phonenumber {
+    margin-bottom: 24px;
+    > div#phone {
+      > input[type="text"] {
+        max-width: 250px;
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        padding: 12px 14px 12px 10px;
+      }
+      > input[type="text"]:hover {
+        border: 2px solid #4058df;
+      }
+    }
+  }
+}
+div.row6 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+
+  > div.school {
+    margin-bottom: 24px;
+
+    > div#school {
+      > select {
+        max-width: 250px;
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        padding: 12px 24px 12px 10px;
+      }
+    }
+  }
+  > div.course {
+    margin-bottom: 24px;
+
+    > div#course {
+      > select {
+        max-width: 250px;
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        padding: 12px 24px 12px 10px;
+      }
+    }
+  }
+}
+div.row7 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  > div.info {
+    margin-bottom: 24px;
+
+    > div#info {
+      > input[type="text"] {
+        max-width: 250px;
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        padding: 12px 24px 12px 10px;
+      }
+      > input[type="text"]:hover {
+        border: 2px solid #4058df;
+      }
+    }
+  }
+  div.scholarship {
+    margin-bottom: 24px;
+
+    > div#scholarship {
+      > input[type="text"] {
+        border-radius: 4px;
+        border: 1px solid rgb(216, 219, 223);
+        padding: 12px 24px 12px 10px;
+      }
+      > input[type="text"]:hover {
+        border: 2px solid #4058df;
+      }
+    }
+  }
+}
+
+div.terms {
+  margin-inline: 50px;
+}
+button {
+  margin-block: 30px;
+  width: 100%;
+  padding: 12px 0px;
+  color: #fff;
+  background: rgb(106, 111, 245);
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out 0s;
+  cursor:pointer;
+}
